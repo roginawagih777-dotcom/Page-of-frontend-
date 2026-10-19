@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+         .form-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            gap: 40px;
+    }
+
+         .form-group {
+            flex: 1;
+            display: flex;
+            align-items: center;
+    }
+
+         .form-group label {
+            width: 180px;
+            font-size: 14px;
+    }
+
+         .form-group input {
+            flex: 1;
+            border: 1px solid #666;
+            padding: 3px 6px;
+            height: 20px;
+            outline: none;
+    }
+    </style>
+</head>
+
+<body>
+    <header style="text-align: center; color: rgb(46, 46, 131);">
+        <h1>Rogina Wagih</h1>
+        <p>Front End Developer</p>
+    </header>
+    <section>
+        <h2 style="color: green;">About Me</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse accusamus voluptatibus itaque non velit et earum exercitationem ratione, totam cumque corrupti perspiciatis pariatur suscipit commodi aliquid eius nam nulla ullam. ipsum dolor sit amet consectetur adipisicing elit. Distinctio molestiae soluta expedita dolorem eaque nemo explicabo reprehenderit ipsam aperiam dolorum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil incidunt iusto libero quia sunt tempora molestias consectetur voluptate excepturi molestiae assumenda aperiam dignissimos maxime corporis, reprehenderit cumque esse modi laudantium?</p>
+        <h3 style="background-color: blue;">skills</h3>
+        <ul>
+            <li><a href="#">html</a></li>
+            <li><a href="#">css</a></li>
+            <li><a href="#">javascript</a></li>
+            <li><a href="#">react.js</a></li>
+            <li><a href="#">angulr</a></li>
+        </ul>
+        <h2 style="color: green;">Experience Timeline</h2>
+        <table border="2" style="width: 100%;">
+            <caption>professtional Experience overview</caption>
+            <thead style="background-color: blue; color: white">
+              <tr>
+                <td>company</td>
+                <td>logo</td>
+                <td>role</td>
+                <td>key achievement</td>
+                <td>dates</td>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">techcorp</td>
+                    <td rowspan="2"><img src="./photo_1_2026-10-19_16-56-33.jpg" width="100px "></td>
+                    <td>Senior full stack Developer</td>
+                    <td>
+                        <ul>
+                            <li>lead Development of web application</li>
+                            <li>mentor junior Developers</li>
+                            <li>architect scalable solutions</li>
+                        </ul>
+                    </td>
+                    <td>jan 2023-present</td>
+                </tr>
+                <tr>
+                    <td>full stack Developer</td>
+                    <td>
+                        <ul>
+                            <li>lead Development of web application</li>
+                            <li>mentor junior Developers</li>
+                            <li>architect scalable solutions</li>
+                        </ul>
+                    </td>
+                    <td>2021-2023</td>
+                </tr>
+                <tr>
+                    <td>digital anency pro</td>
+                    <td><img src="./photo_2_2026-10-19_16-56-50.jpg" width="100px"></td>
+                    <td>frontend Developer</td>
+                    <td>
+                        <ul>
+                            <li>lead Development of web application</li>
+                            <li>mentor junior Developers</li>
+                            <li>architect scalable solutions</li>
+                        </ul>
+                    </td>
+                    <td>2019-2020</td>
+                </tr>
+                <tr>
+                    <td>web design studio</td>
+                    <td><img src="./photo_3_2026-10-19_16-56-33.jpg" width="100px"></td>
+                    <td>junior web Developer</td>
+                    <td>
+                        <ul>
+                            <li>lead Development of web application</li>
+                            <li>mentor junior Developers</li>
+                            <li>architect scalable solutions</li>
+                        </ul>
+                    </td>
+                    <td>2019-2020</td>
+                </tr>
+            </tbody>
+            <footer>
+                <td colspan="5">total Experience 5+ years in web Developer </td>
+            </footer>
+        </table>
+    </section>
+
+    <footer>
+        <h2 style="color: green;">Contact Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorum magnam officia nemo ut reiciendis veritatis, mollitia at quisquam numquam?</p>
+        <form>
+            <fieldset>
+                <legend>personal information</legend>
+                
+                <div class="form-row">
+                     <div class="form-group">
+                        <label for="first-name">first name</label>
+                        <input type="text" id="first-name" name="first_name">
+                </div>
+                     <div class="form-group">
+                        <label for="last-name">last name</label>
+                        <input type="text" id="last-name" name="last_name">
+                     </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                       <label for="phone">phone number</label>
+                       <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+
+                <div class="form-row" style="margin-bottom: 0;">
+                    <div class="form-group">
+                        <label for="meeting-date">preferred meeting date:</label>
+                        <input type="date" id="meeting-date" name="meeting_date">
+                    </div>
+                    <div class="form-group">
+                        <label for="best-time">best time to Contact</label>
+                        <input type="text" id="best-time" name="best_time">
+                    </div>
+                </div>
+        </fieldset>
+        <br>
+
+        <div class="form-buttons">
+      <button type="submit" class="btn-send" style="background-color: blue;">send massage</button>
+      <button type="reset" class="btn-clear"  style="background-color: red;">clear data</button>
+        </div>
+  </form>
+    </footer>
+    
+</body>
+</html>
